@@ -1,0 +1,33 @@
+{
+  "name": "arr-iterator",
+  "version": "1.0.0",
+  "description": "An iterator for arrays.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/arr-iterator.git"
+  },
+  "keywords": [
+    "array",
+    "iterator"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/arr-iterator/issues"
+  },
+  "homepage": "https://github.com/gummesson/arr-iterator",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "covert": "^1.0.1",
+    "smokestack": "^3.2.2",
+    "tap-closer": "^1.0.0",
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node test/",
+    "test:browser": "browserify test/ | tap-closer | smokestack",
+    "test:cover": "covert test/"
+  }
+}
